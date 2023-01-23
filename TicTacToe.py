@@ -12,7 +12,7 @@ def display(fie):
 def player_choice(play, ava):
     '''Collect user position choice'''
     cho = 'x'
-    while cho.isdigit() is False or int(cho) not in available:
+    while cho.isdigit() is False or int(cho) not in ava:
         cho = input(f"Player {play}'s turn. Please input your choice (1~9): ")
         if cho.isdigit() is False or int(cho) not in range(1,10):
             print('Sorry, input is not valid.\n')
